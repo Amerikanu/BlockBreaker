@@ -28,10 +28,10 @@ namespace Leedong.BlockBreaker
 
         public void Shoot(Vector2 dir)
         {
-            StartCoroutine(IShoot(dir));
+            StartCoroutine(StartShoot(dir));
         }
 
-        private IEnumerator IShoot(Vector2 dir)
+        private IEnumerator StartShoot(Vector2 dir)
         {
             for (int i = 0; i < _balls.Count; i++)
             {
